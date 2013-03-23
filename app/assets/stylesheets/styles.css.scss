@@ -1,3 +1,11 @@
+
+$btnPrimaryBackground: purple;
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+$baseFontFamily: 'Source Sans Pro', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 @import 'bootstrap';
 
  body {
@@ -5,6 +13,11 @@
  }
 
 @import 'bootstrap-responsive';
+
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
 
 .footer {
 	margin-top: 50px;
